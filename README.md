@@ -14,7 +14,7 @@ $acceptable_local_ip_addresses
 To start VPN server as a docker container run:
 
 ````
-docker run -ti --net=host --privileged -p 1723:1723 -e client=some_user -e server=* -e secret=password -e acceptable_local_ip_addresses=* mmontagna/docker-vpn-pptp
+docker run -ti --net=host --privileged -p 1723:1723 -e client=some_user -e server=* -e password=password -e acceptable_local_ip_addresses=* mmontagna/docker-vpn-pptp
 ````
 
 Based on:
